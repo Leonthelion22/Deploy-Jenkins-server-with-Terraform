@@ -32,7 +32,7 @@ resource "aws_instance" "JenkinsEC2" {
 resource "aws_security_group" "JenkinsSecG" {
   name        = "JenkinsSecG"
   description = "Allow inbound traffic and all outbound traffic"
-  vpc_id      = "vpc-090bab833d6c0d6e5"   #Grab your default VPC ID
+  vpc_id      = "YOUR OWN VPC ID"   #Grab your default VPC ID
 
   tags = {
     Name = "JenkinsSecG"
